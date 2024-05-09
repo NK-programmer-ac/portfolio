@@ -1,0 +1,427 @@
+@charset "UTF-8";
+
+/*common*/
+body{
+  margin: 0;
+}
+
+main{
+  margin: 0;
+}
+
+h2{
+  margin: 0;
+}
+
+h3{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: black;
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  background: #eee;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+ul{
+  margin: 0;
+  margin-left: auto;
+  display: flex;
+}
+
+li{
+  list-style: none;
+  padding: 16px;
+  margin: 16px;
+}
+
+.myIcon{
+  border-radius: 50px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.hero{
+  height: 700px;
+  display: flex;
+  position: relative;
+}
+
+header ul{
+  display: flex;
+  align-items: center;
+}
+
+.headerLink:hover{
+  background: #cccccc;
+}
+
+.camp{
+  background: url(camp.JPG);
+  flex: 1;
+  opacity: .5;
+  background-size: cover;
+}
+
+.muscleTraning{
+  background: url(elementPicture.JPG);
+  opacity: .5;
+  background-size: cover;
+  flex: 1;
+}
+
+.snowboard{
+  background: url(snowboard.jpg);
+  opacity: .5;
+  background-size: cover;
+  flex: 1;
+}
+
+.heroTitle{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 64px;
+  width: 1000px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 64px;
+  letter-spacing: .2em;
+  opacity: .9;
+  color: #595757;
+}
+
+.subtitle{
+  font-size: 24px;
+}
+
+/*フォントの読み込み*/
+@font-face{
+  font-family:'Noto Sans JP';
+  src: url("noto-sans-jp/NotoSansJP-Light.otf") format("opentype");  
+}
+
+@font-face{
+  font-family:'Yeseva One';
+  src: url("yeseva-one/Yeseva_One.ttf") format("truetype");  
+}
+
+/*Hobbyタイトル*/
+.main_hobby_title{
+  font-size: 120px;
+  font-family:"Yeseva One", cursive;
+  letter-spacing: .3em;
+  text-align: center;
+}
+
+.hobby_content{
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  padding: 128px 0;
+}
+
+.mount_content{
+  padding: 64px 128px;
+  display: flex;
+  gap: 128px;
+  /* background-color: #f1eac3; */
+  margin: 128px 80px 0 80px;
+}
+
+.bk_mount_left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.muscleTraning_content{
+  padding: 64px 0;
+  /* display: flex; */
+  /* gap: 128px; */
+  /* background-color: #f1eac3; */
+  margin-top: 128px;
+}
+
+.title_muscle{
+  text-align: right;
+  font-size: 120px;
+  opacity: .6;
+  font-family:"Yeseva One", cursive;
+  letter-spacing: .2em;
+}
+
+.snowboard_content{
+  padding: 64px 128px 64px 0px;
+  /* background-color: #f1eac3; */
+  margin-top: 128px;
+}
+
+.title_snowboard{
+  text-align: center;
+  font-size: 120px;
+  opacity: .6;
+  font-family:"Yeseva One", cursive;
+  letter-spacing: .2em;
+  padding-bottom: 120px;
+}
+
+.hobby_content h2{
+  /* font-size: 64px; */
+  color: gray;
+}
+
+.camp_title{
+  font-size: 120px;
+  opacity: .6;
+  font-family:"Yeseva One", cursive;
+  letter-spacing: .3em;
+}
+
+.hobby_text{
+  margin-top: 64px;
+  font-size: 30px;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align:left;
+  letter-spacing: 0.25em;
+}
+
+.hobby_mount{
+  margin-top: 64px;
+  /* opacity: .5; */
+  border-radius: 50%;
+}
+
+.hobby_muscle{
+  /* opacity: .5; */
+  /* border-radius: 50%; */
+  margin: 120px auto 0 auto;
+  transition:1s all;
+}
+
+.hero_muscle{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.hobby_muscle:hover{
+  transform:scale(1.2,1.2);
+  transition:1s all;
+  opacity:0.5;
+}
+
+.muscle_sub_title{
+  margin-top: 60px;
+  text-align: center;
+  /* position: relative; */
+}
+
+.hobby_snowboard{
+  /* margin-top: 64px; */
+  /* opacity: .5; */
+  /* border-radius: 50%; */
+}
+
+article:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+
+
+.topPage{
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+
+
+.flex_snowboard{
+  position: relative;
+}
+
+/* .sample_1{
+  width: 200px;
+  height: 200px;
+  background: pink;
+} */
+
+.snowboardList{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 50px;
+  /* background: #f6c92d; */
+  position: relative;
+  /* top: 58%;
+  left: 80%; */
+}
+
+.snowboardList li{
+  font-family: "Noto Sans JP", sans-serif;
+  transition:3s all;
+}
+
+.snowboardList li a{
+  text-decoration: none;
+}
+
+.snowboardList li p{
+  margin-top: 10px;
+}
+
+footer{
+  height: 300px;
+  background-color: #222;
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
+  text-align: center;
+}
+
+footer .snsList > li:nth-child(1) span{
+  background: url(01_Static_Glyph/02_White_Glyph/Instagram_Glyph_White.png) no-repeat center left / 26px 26px;
+  color: white;
+  padding-left: 37px;
+}
+
+footer .snsList > li:nth-child(2) span{
+  background: url(x-logo/logo-white.png) no-repeat center left / 26px 26px;
+  color: white;
+  padding-left: 37px;
+}
+
+footer img{
+  border-radius: 50%;
+}
+
+footer p{
+  color: white;
+}
+
+/*AboutページCSS*/
+
+.container{
+  margin-top: -40px;
+  text-align: center;
+}
+
+.aboutMainSrc{
+  z-index: -1;
+}
+
+.intro{
+  margin: 0 150px;
+}
+
+.main_about_title{
+  text-align: center;
+  font-size: 100px;
+  opacity: .6;
+  font-family:"Yeseva One", cursive;
+  letter-spacing: .3em;
+  margin-top: 100px;
+  color: black;
+  font-weight: bold;
+  z-index: 1;
+  position: relative;
+}
+
+.name{
+  font-size: 24px;
+}
+
+.introduction{
+  text-align: left;
+  background-color: #fff;
+  width: 500px;
+  height: 400px;
+  padding: 15px;
+  margin: -130px 0 0 auto;
+  font-family:'Noto Sans JP', sans-serif;
+  z-index: 2;
+  position: relative;
+}
+
+/*contactのスタイルCSS*/
+.contact_sec1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_hero{
+  padding: 100px 0;
+}
+
+.contact_title{
+  font-size: 64px;
+  font-family: "Yeseva One", cursive;
+  letter-spacing: .2em;
+}
+
+.sentence{
+  margin-top: 64px;
+  letter-spacing: .1em;
+}
+
+.requiredInput{
+  color:red;
+}
+
+.formarea{
+  margin-top: 128px;
+}
+
+.form{
+  display: flex;
+  margin-top: 64px;
+  gap: 20px;
+}
+
+.form_p{
+  padding: 16px 0 ;
+  font-size: 16px;
+  width: 150px;
+}
+
+.form input{
+ /* flex-grow: 1; */
+ /* height: 48px; */
+}
+
+.tel{
+  height: 40px;
+}
+
+.hyphen{
+  align-items: center;
+}
+
+.form textarea{
+  flex-grow: 1;
+  height: 100px;
+}
+
+.btn{
+  display: block;
+  padding: 25px;
+  width: 320px;
+  margin: 64px auto 16px auto;
+  color: white;
+  background-color: #222;
+}

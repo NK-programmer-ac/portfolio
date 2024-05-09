@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | YUSUKE SATO</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="myIcon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#"><img src="myIcon.jpg" alt="YUSUKE SATOのアイコン" width="64" height="64" class="myIcon">
+    </a>
+    <ul>
+      <li class="headerLink">
+        <a href="index.html" >Top</a>
+      </li>
+      <li class="headerLink">
+        <a href="about.html" >About</a>
+      </li>
+      <li class="headerLink">
+        <a href="contact.html" >Contact</a>
+      </li>
+    </ul>
+  </header>
+
+  <section class="contact_sec1" data-aos="fade-left"
+  data-aos-duration="2000">
+    <div class="contact_hero">
+      <h2 class="contact_title">CONTACT</h2>
+      <p class="sentence">私のWebサイトにご訪問いただき、ありがとうございます。
+      <br>こんな私にでもお話したい等のご連絡ございましたらお気軽にご連絡ください。
+      <br>
+        <span class="requiredInput">*
+        </span>は必須入力項目となりますのでご注意ください。
+      </p>
+      <div class="formarea">
+        <!--名前フォーム-->
+        <div class="form">
+          <p class="form_p">お名前<span class="requiredInput">*</span>
+          </p>
+          <input type="text">
+        </div>
+
+        <!--メールアドレスフォーム-->
+        <div class="form">
+          <p class="form_p">メールアドレス<span class="requiredInput">*</span> </p>
+          <input type="text">
+        </div>
+
+        <!--電話番号 -->
+        <div class="form">
+          <p class="form_p">電話番号</p>
+          <span>
+            <input type="tel" class="tel"> 
+            <span class="
+            hyphen">-</span>
+            <input type="tel" class="tel"> 
+            <span class="hyphen">-</span>
+            <input type="tel" class="tel">
+          </span>
+        </div>
+
+        <!--お問い合わせ内容 -->
+        <div class="form">
+          <p class="form_p">お問い合わせ内容<span class="requiredInput">*</span></p>
+          <textarea></textarea>
+        </div>
+
+        <input type="submit"  name="submit" value="送信する"
+        class="btn">
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="sns_area">
+      <ul class="snsList">
+        <li>
+          <a href="https://www.instagram.com/ele_shkays/" target="_blank">
+            <span>Instagram</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/nullkingNo1" target="_blank">
+            <span>X</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <img src="myIcon.jpg" alt="YUSUKE SATOのアイコン" height="100" width="100">
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js">
+  </script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

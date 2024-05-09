@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUSUKE SATO's Postfolio Site</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="icon" href="myIcon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script src="portfolio.js"></script>
+</head>
+<body>
+  <header>
+    <a href="#"><img src="myIcon.jpg" alt="YUSUKE SATOのアイコン" width="64" height="64" class="myIcon">
+    </a>
+    <ul>
+      <li class="headerLink">
+        <a href="index.html" >Top</a>
+      </li>
+      <li class="headerLink">
+        <a href="about.html" >About</a>
+      </li>
+      <li class="headerLink">
+        <a href="contact.html" >Contact</a>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <div class = "hero">
+      <div class="camp">
+      </div>
+      <div class="muscleTraning">
+      </div>
+      <div class="snowboard">
+      </div>
+      <p class="heroTitle"><span>YUSUKE SATO's</span><br><span class="subtitle">Portfolio Site</span></p>
+    </div>
+
+    <div class="hobby_content">
+      <h2 data-aos="fade-up" class="main_hobby_title">Hobby</h2>
+      <article class="mount_content" data-aos="fade-up">
+        <div class="bk_mount">
+          <img src="mountFuji.JPG" alt="富士山" width="400" height="400" class="hobby_mount">
+        </div>
+        <div class="bk_mount_left">
+          <h3 class="camp_title">CAMP</h3>
+          <p class="hobby_text">日々のストレス社会から<br>解放できる唯一の時間
+          </p>
+        </div>
+      </article>
+      <article class="muscleTraning_content" data-aos="fade-up">
+        <div>
+          <h3 class="hobby_title  title_muscle">Muscle<br>Traning</h3>
+        </div>
+        <div class="bk_muscle">
+          <div class="hero_muscle">
+            <img id="slideImg" src="muscleTraning.JPG" alt="筋トレ" width="800" height="500"
+            class="hobby_muscle">
+          </div>
+        </div>
+      </article>
+      <article class="snowboard_content" data-aos="fade-up">
+        <div class="hero_snowboard">
+          <h3 class="hobby_title title_snowboard">Snow<br>board</h3>
+        </div>
+        <div class="flex_snowboard">
+          <ul class="snowboardList">
+            <li data-aos="fade-up">
+              <a href="#">
+                <img src="sample.jpg">
+                <h3>マイボード</h3>
+                <p>国内で唯一のボードらしい</p>
+              </a>
+            </li>
+            <li data-aos="fade-up">
+              <a href="#">
+                <img src="sample.jpg">
+                <h3>マイブーツ</h3>
+                <p>かなり良いやつ</p>
+              </a>
+            </li>
+            <li data-aos="fade-up">
+              <a href="#">
+                <img src="sample.jpg">
+                <h3>ウェア</h3>
+                <p>上下セットで11万( ;∀;)</p>
+              </a>
+            </li>
+            <li data-aos="fade-up">
+              <a href="#">
+                <img src="sample.jpg">
+                <h3>ゴーグル</h3>
+                <p>こんなんでもたけぇんだこりゃ</p>
+              </a>
+            </li>
+            <li data-aos="fade-up">
+              <a href="#">
+                <img src="sample.jpg">
+                <h3>手袋</h3>
+                <p>無くしガチな手袋</p>
+              </a>
+            </li>
+            <li data-aos="fade-up">
+              <a href="#">
+                <img src="sample.jpg">
+                <h3>マイボード</h3>
+                <p>国内で唯一のボードらしい</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="sns_area">
+      <ul class="snsList">
+        <li>
+          <a href="https://www.instagram.com/ele_shkays/" target="_blank">
+            <span>Instagram</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/nullkingNo1" target="_blank">
+            <span>X</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <img src="myIcon.jpg" alt="YUSUKE SATOのアイコン" height="100" width="100">
+    </div>
+  </footer>
+
+  <a href="#" data-aos="fade-up" data-aos-anchor="#footer" data-aos-offset="0"
+  class="topPage">
+    <img src="topPageIcon.png" alt="トップページアイコン" width="48px" height="48px">
+  </a>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    var pics_src = new Array("muscleTraning.JPG","mountFuji.JPG","elementPicture.JPG");
+    var num = -1;
+
+    slideshow_timer();
+
+    function slideshow_timer(){
+        if (num == 2){
+            num = 0;
+        } 
+        else {
+            num ++;
+        }
+        document.getElementById("slideImg").src=pics_src[num];
+        setTimeout("slideshow_timer()",2000); 
+    }
+  </script>
+
+</body>
+</html>
